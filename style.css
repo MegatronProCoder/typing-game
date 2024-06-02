@@ -1,0 +1,53 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #1E0555;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.timer{
+    color: #F0DB4F;
+    position: absolute;
+    top:2rem;
+    font-size: 4rem;
+}
+.typing-container{
+    width: 100%;
+    max-width: 600px;
+    background-color: #F0DB4F;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+
+}
+.typing-content{
+    padding-inline: 1rem;
+}
+.typing-input{
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid hsl(60, 44%, 33%);
+    border-radius: 0.5rem;
+    min-height:  150px;
+    margin-top: 1.5rem;
+    font-size: inherit;
+    font-family: inherit;
+}
+.typing-input:focus{
+    outline: 2px solid hsl(60, 71%, 27%);
+}
+.correct{
+    color:green;
+}
+.incorrect{
+    color:red;
+    text-decoration: underline;
+}
